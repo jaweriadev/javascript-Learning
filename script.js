@@ -22,3 +22,7 @@ console.log(letters);
 
 // join method
 console.log(letters.join("-"));
+
+// at method
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.at(2));
