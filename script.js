@@ -77,3 +77,15 @@ const currencies = new Map([
 currencies.forEach(function (value, key, map) {
   console.log(`${key} : ${value}`);
 });
+// example of map
+var Juice = 12;
+const snackes = ["lays", " salanty", "kurkure", " cottoncandy", "gum"];
+
+const s = snackes.map(myFunction);
+console.log(s);
+// snackes.map(function (item, index) {
+//   console.log("item " + index + " :", item);
+// });
+function myFunction(item, index) {
+  return item + Juice;
+}
