@@ -89,3 +89,19 @@ console.log(s);
 function myFunction(item, index) {
   return item + Juice;
 }
+
+// if else if statement
+
+const weddingDay = "walima";
+
+if (weddingDay == "nikkah") {
+  console.log("I will wear capri shirt");
+} else if (weddingDay == "mehndi") {
+  console.log("I will wear lhnga");
+} else if (weddingDay == "rukhsti") {
+  console.log("I will wear grara");
+} else if (weddingDay == "walima") {
+  console.log("I will wear Maxi");
+} else {
+  console.log("Function is cancelled");
+}
