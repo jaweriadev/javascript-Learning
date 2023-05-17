@@ -37,6 +37,7 @@ for (const movement of movements) {
     console.log(`You withdrew ${Math.abs(movement)}`);
   }
 }
+// for each method
 
 console.log("-----ForEach------");
 
@@ -92,7 +93,7 @@ function myFunction(item, index) {
 
 // if else if statement
 
-const weddingDay = "walima";
+const weddingDay = "nikkah";
 
 if (weddingDay == "nikkah") {
   console.log("I will wear capri shirt");
@@ -105,3 +106,19 @@ if (weddingDay == "nikkah") {
 } else {
   console.log("Function is cancelled");
 }
+
+// map method
+const values = [200, 400, -450, 3000, -650, -130, 70, 1300];
+const eurToUsd = 1.1;
+// const valuesUSD = values.map(function (mov) {
+//   return mov * eurToUsd;
+// });
+
+// arrow map function
+const valuesUSD = values.map((mov) => mov * eurToUsd);
+console.log(values);
+console.log(valuesUSD);
+
+const valuesUSDfor = [];
+for (const mov of values) valuesUSDfor.push(mov * eurToUsd);
+console.log(valuesUSDfor);
