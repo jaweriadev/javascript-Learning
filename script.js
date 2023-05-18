@@ -122,3 +122,17 @@ console.log(valuesUSD);
 const valuesUSDfor = [];
 for (const mov of values) valuesUSDfor.push(mov * eurToUsd);
 console.log(valuesUSDfor);
+
+// filter method
+let a = [1, 2, 4, 66, 44, 3];
+let b = a.filter((c) => {
+  return c < 10;
+});
+console.log(b);
+// reduce method
+
+let arr3 = [1, 2, 2, 3, 5, 2];
+let arr4 = arr3.reduce((h, h1) => {
+  return h + h1;
+});
+console.log(arr4);
