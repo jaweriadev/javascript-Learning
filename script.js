@@ -150,3 +150,36 @@ const username = user
   .map((name) => name[0])
   .join("");
 console.log(username);
+
+// find method
+var ages = [12, 18, 23, 14, 22];
+console.log(ages);
+
+var check = ages.find(adultAge);
+console.log(check);
+
+function adultAge(age) {
+  return age >= 18;
+}
+
+// findIndex method
+var users = [
+  { id: 1, name: "Jaweria" },
+  { id: 2, name: "Laveeza" },
+  { id: 3, name: " Azwa" },
+  { id: 3, name: " Amna" },
+  { id: 3, name: " Uswah" },
+  { id: 3, name: " Ifra" },
+];
+
+var findUser = users.findIndex(userName);
+var findUsers = users.find(usersName);
+console.log(findUsers);
+console.log(findUser);
+
+function userName(users) {
+  return users.name == "Laveeza";
+}
+function usersName(users) {
+  return users.id == 2;
+}
