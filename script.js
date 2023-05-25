@@ -162,6 +162,8 @@ function adultAge(age) {
   return age >= 18;
 }
 
+// the syntax of filter is similar to find, but filter returns an array of all matching elements.
+
 // findIndex method
 var users = [
   { id: 1, name: "Jaweria" },
@@ -183,3 +185,87 @@ function userName(users) {
 function usersName(users) {
   return users.id == 2;
 }
+// some method (true if one value fulfills the condition)
+var ages = [12, 13, 15, 19, 18, 20];
+console.log(ages);
+
+var g = ages.some(checkAdult);
+console.log(g);
+
+function checkAdult(age) {
+  return age > 18;
+}
+
+// every method (it checks every value)
+var ages = [12, 23, 43, 22, 16];
+console.log(ages);
+
+var e = ages.every(adultAge);
+console.log(e);
+
+function adultAge(age) {
+  return age > 16;
+}
+
+// flat method
+let num = [[1, 2, 3], [4, 5, 6], 7, 8, 9];
+console.log(num.flat());
+
+let arrDeep = [
+  [1, 2, [3, 4]],
+  [[5, 6, 7], 8],
+];
+// if we write 2 in flat(2) than it means we will go 2nd level of nesting
+console.log(arrDeep.flat(2));
+
+// flat map method
+var arr5 = ["Welcome to", "javascript", "programming language"];
+arr5 = arr5.flatMap((el) => {
+  return el.split(" ");
+});
+console.log(arr5);
+
+// sort method
+let girls = ["jaweria", "Laviza", "Uswah", "Azwa", "ifra"];
+girls.sort();
+console.log(girls);
+
+let arr6 = [1, 2, 15];
+arr6.sort();
+
+console.log(arr6); // 1, 15, 2
+// 2nd example of sort
+let compare = (a, b) => {
+  return a - b;
+};
+let numb = [222, 33, 2, 11, 4, 6];
+numb.sort(compare);
+console.log(numb);
+
+// 3rd example
+let compares = (a, b) => {
+  return b - a;
+};
+let numbe = [222, 33, 42, 11, 4, 6];
+numbe.sort(compares);
+console.log(numbe);
+
+// reverse method
+let snacks = ["lays", "kurkure", "crunch", "wavy", "salanty", "juice"];
+snacks.reverse();
+console.log(snacks);
+
+// 2nd example of reverse method
+let counting = [1, 2, 3, 4, 5, 6];
+counting.reverse();
+console.log(counting);
+
+// splice
+let countings = [22, 33, 44, 55, 66, 77, 88];
+countings.splice(2, 3, 1029, 1022, 1033);
+console.log(countings);
+
+// slice
+let countingss = [22, 33, 44, 55, 66, 77, 88];
+let newArr = countingss.splice(2, 6);
+console.log(newArr);
