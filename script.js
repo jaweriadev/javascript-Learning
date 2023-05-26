@@ -269,3 +269,37 @@ console.log(countings);
 let countingss = [22, 33, 44, 55, 66, 77, 88];
 let newArr = countingss.splice(2, 6);
 console.log(newArr);
+
+// practice set
+// 1
+let arr7 = [1, 2, 3, 4, 5];
+arr7.push(6);
+console.log(arr7);
+// 2
+// let arr8 = [1, 34, 6, 7, 3, 2];
+// let a1 = [2, 33, 44, 55, 0];
+// do {
+//   arr8.push(a1);
+// } while (a1 != 0);
+
+// 3
+
+let arr9 = [1, 20, 30, 50, 55, 44, 66];
+let n = arr9.filter((x) => {
+  return x % 10 == 0;
+});
+console.log(n);
+
+// 4
+let arr10 = [2, 4, 6, 8, 10];
+let ne = arr10.map((y) => {
+  return y * y;
+});
+console.log(ne);
+
+// 5
+let arr11 = [1, 4, 6, 8, 2];
+let next = arr11.reduce((x1, x2) => {
+  return x1 * x2;
+});
+console.log(next);
