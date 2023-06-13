@@ -303,3 +303,31 @@ let next = arr11.reduce((x1, x2) => {
   return x1 * x2;
 });
 console.log(next);
+// numbers method
+var parse = "10.00";
+var convert = parseInt(parse);
+console.log(convert);
+
+var integ = 99;
+var converts = Number.isInteger(integ);
+console.log(converts);
+
+var flot = 45.22;
+var convertss = parseFloat(flot);
+console.log(convertss);
+
+var finit = 200;
+var convertsss = isFinite(finit);
+console.log(convertsss);
+
+var finite = Infinity;
+var convertssss = isFinite(finite);
+console.log(convertssss);
+
+var fix = 5.783;
+var convertsssss = fix.toFixed(2);
+console.log(convertsssss);
+
+var pre = 5.783;
+var convertsssss = pre.toPrecision(2);
+console.log(convertsssss);
